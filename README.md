@@ -15,7 +15,6 @@ Enterprise-grade file encryption with AES-256-GCM and RSA-4096.
 - **Cross-Platform** - Windows, macOS, and Linux support
 - **Secure Key Derivation** - PBKDF2 with configurable iterations
 - **Interactive CLI** - User-friendly terminal interface with progress bars
-- **QR Code Generation** - Share encrypted keys via QR codes
 - **HMAC Verification** - Integrity checking for all encrypted data
 
 ---
@@ -85,7 +84,6 @@ python3 FileSecureSuite_1_0_0.py
 3. **Text Encryption** - Encrypt/decrypt text directly
 4. **Generate Keys** - Create RSA-4096 key pairs
 5. **Manage Keys** - Import/export encryption keys
-6. **Generate QR Codes** - Share keys securely
 
 ---
 
