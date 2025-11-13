@@ -1,0 +1,8 @@
+# FileSecureSuite Requirements
+# Install with: pip install -r requirements.txt
+
+cryptography>=41.0.0
+qrcode[pil]>=8.0
+colorama>=0.4.6
+tqdm>=4.66.0
+pyperclip>=1.8.2
