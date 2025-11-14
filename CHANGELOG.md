@@ -7,6 +7,40 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.2] - 2025-11-14
+
+### Fixed
+- **SyntaxError in QR code display** (line 1372)
+  - Fixed f-string expression containing backslash character
+  - Moved newlines outside f-string expression for Python 3.6+ compatibility
+- **QR code viewer not opening on Linux/macOS**
+  - Fixed subprocess calls not properly backgrounding image viewers
+  - Improved xdg-open and eog compatibility
+  - Added proper error handling for missing viewers
+
+### Improved
+- Cross-platform image viewer handling (Windows/Linux/macOS)
+- Subprocess error handling and fallback mechanisms
+- Headless environment detection and handling
+- File permission handling across platforms
+
+### Tested On
+- Windows 10/11 (CMD)
+- Linux Desktop (GNOME/KDE/XFCE)
+- Kali Linux (Headless SSH)
+- Remote Desktop environments
+
+---
+
+## [1.0.1] - 2025-11-13
+
+### Fixed
+- Cross-platform line ending normalization (CRLF → LF)
+- UTF-8 encoding issues on Linux systems
+- File encoding standardization for Python 3.6+ compatibility
+
+---
+
 ## [1.0.0] - 2025-11-13
 
 ### Added
@@ -56,6 +90,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-**Current Version:** 1.0.0  
-**Release Date:** 2025-11-13  
+**Current Version:** 1.0.2  
+**Release Date:** 2025-11-14  
 **Status:** Production Ready
