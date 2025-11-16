@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.3] - 2025-11-16
+
+### Improved
+- **QR Code display functionality**
+  - Replaced PNG file generation with ASCII art terminal display using `print_ascii()`
+  - QR code now displayed only when user selects option [1] "View QR Code"
+  - Removed file I/O operations (.qrcode directory creation)
+  - Ephemeral QR code display (no files left on disk)
+  - Unified navigation: both Credits and QR Code pages return to Main Menu
+  - Enhanced terminal-based user experience
+
+### Changed
+- Removed `generate_lightning_qr()` function (PNG generation)
+- Removed `open_qr_image()` function (image viewer integration)
+- Renamed QR generation to `generate_and_display_lightning_qr()` (ASCII display)
+- Credits page now shows menu before displaying QR code
+
+### Technical Details
+- Uses `qrcode.print_ascii(invert=True)` for better terminal readability
+- Maintains ERROR_CORRECT_L for Lightning address accuracy
+- Cross-platform compatible (Windows/Linux/macOS terminals)
+- No external image viewer dependencies required
+
+---
+
 ## [1.0.2] - 2025-11-14
 
 ### Fixed
@@ -90,6 +115,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-**Current Version:** 1.0.2  
-**Release Date:** 2025-11-14  
+**Current Version:** 1.0.3  
+**Release Date:** 2025-11-16  
 **Status:** Production Ready
